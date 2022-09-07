@@ -4,6 +4,7 @@ import styled from "styled-components";
 // import './Button.css';
 
 const Button = styled.button`
+  width: 100%;
   //  this comes from button.css
   font: inherit;
   padding: 0.5rem 1.5rem;
@@ -12,6 +13,11 @@ const Button = styled.button`
   background: #8b005d;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
   cursor: pointer;
+
+  // adding a media query in styled component
+  @media (min-width: 768px) {
+    width: auto;
+  }
 
   // use & for selectors
   &:focus {
